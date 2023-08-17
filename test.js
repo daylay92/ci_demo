@@ -10,7 +10,7 @@ describe('API Test', () => {
     chai.request(app)
       .get('/')
       .end((err, res) => {
-        expect(res).to.have.status(500);
+        expect(res).to.have.status(200);
         expect(res.text).to.equal('Hello, GitHub Workflow!');
         done();
       });
